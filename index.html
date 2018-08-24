@@ -9,7 +9,33 @@
     <form action="index.html" method="GET">
 
         <fieldset>
-            <legend></legend>
+            <legend>Personal Information</legend>
+            <fieldset>
+                <legend>Personal</legend>
+                <div>
+                    <label for="name">First Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Type your first name" required>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" id="lname" placeholder="Type your last name" required>
+                    <label for="bd">Birthday:</label>
+                    <input type="date" name="bd" id="bd" required>
+                    <label for="an">Favorite Animal:</label>
+                    <input type="text"name="an" id="an" placeholder="E.g. Dog"> 
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Account</legend>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="text" name="email" id="email" placeholder="johndoe@example.com" required>
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass" required pattern=".{6,}"
+                     title="Password must be above 6 characters">
+                    <label for="vpass">Verify Password:</label>
+                    <input type="password" name="vpass" id="vpass" placeholder="Type your password again" required pattern=".{6,}"
+                    title="Password must be above 6 characters"> 
+                </div>
+            </fieldset>
         </fieldset>
     </form>
 </body>
